@@ -1,7 +1,7 @@
 import { Pivot, PivotItem } from "@fluentui/react";
-import DOMPurify from "dompurify";
+// import DOMPurify from "dompurify";
 
-import styles from "./AnalysisPanel.module.css";
+// import styles from "./AnalysisPanel.module.css";
 
 import { SupportingContent } from "../SupportingContent";
 import { SendQuestionResponse } from "../../api";
@@ -19,12 +19,12 @@ interface Props {
 const pivotItemDisabledStyle = { disabled: true, style: { color: "grey" } };
 
 export const AnalysisPanel = ({ answer, activeTab, /*activeCitation,*/ citationHeight, className, onActiveTabChanged }: Props) => {
-    const isDisabledThoughtProcessTab: boolean = false
+    // const isDisabledThoughtProcessTab: boolean = false
     const isDisabledSupportingContentTab: boolean = false
     const isDisabledCitationTab: boolean = false//!activeCitation;
     const activeCitations = 'https://stforetagslotsfrontend.blob.core.windows.net/resources/SimpleFile.pdf'
 
-    const sanitizedThoughts = DOMPurify.sanitize(answer.content);
+    // const sanitizedThoughts = DOMPurify.sanitize(answer.content);
 
     return (
         <Pivot

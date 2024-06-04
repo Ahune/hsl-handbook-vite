@@ -24,7 +24,7 @@ export const Answer = ({
     isSelected,
     isStreaming,
     onCitationClicked,
-    onThoughtProcessClicked,
+    // onThoughtProcessClicked,
     onSupportingContentClicked,
     onFollowupQuestionClicked,
     showFollowupQuestions
